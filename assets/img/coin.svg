@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="421" height="421" viewBox="0 0 421 421">
+  <defs>
+    <linearGradient id="coin-b" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF000" stop-opacity=".5"/>
+      <stop offset="100%" stop-opacity=".15"/>
+    </linearGradient>
+    <circle id="coin-a" cx="210.5" cy="210.5" r="210.5"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#FD0" xlink:href="#coin-a"/>
+    <use fill="url(#coin-b)" xlink:href="#coin-a"/>
+    <circle cx="211" cy="210" r="201" fill="#FD0"/>
+    <circle cx="211" cy="210" r="175" fill="#F4C300"/>
+    <rect width="50" height="204" x="186" y="109" fill="#000" fill-opacity=".15"/>
+  </g>
+</svg>

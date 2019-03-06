@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="421" height="421" viewBox="0 0 421 421">
+  <defs>
+    <linearGradient id="question-mark-b" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#FBDE00"/>
+      <stop offset="100%" stop-opacity=".15"/>
+    </linearGradient>
+    <polygon id="question-mark-a" points="0 10 11 0 410.5 0 421 10 421 412.5 410.5 421 11 421 0 412.5"/>
+    <path id="question-mark-d" d="M173.5,355 L249,355 L249,308.5 L173.5,308.5 L173.5,355 Z M80.5,171.5 L155.5,171.5 L155.5,118.997619 L164.752156,109.745463 L258.000347,109.745463 L266.5,118.997619 L266.5,170.5 L258.000347,178 L207,178 L172.48551,212.51449 L172.48551,280.5 L248.001655,280.5 L248.001655,236 L258.000347,226.5 L309.5,226.5 L342.5,195.122732 L342.5,96 L308.5,63.5 L113.5,63.5 L80,96 L80.5,171.5 Z"/>
+    <filter id="question-mark-c" width="106.9%" height="106.9%" x="-3.4%" y="-1.7%" filterUnits="objectBoundingBox">
+      <feOffset dy="6" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0"/>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#FD0" xlink:href="#question-mark-a"/>
+    <use fill="url(#question-mark-b)" xlink:href="#question-mark-a"/>
+    <polygon fill="#FD0" points="10 9 412 10 412 411 10 411"/>
+    <use fill="#000" filter="url(#question-mark-c)" xlink:href="#question-mark-d"/>
+    <use fill="#FFF" xlink:href="#question-mark-d"/>
+    <path fill="#000" fill-opacity=".15" d="M38.5,55 C28.8350169,55 21,47.1649831 21,37.5 C21,27.8350169 28.8350169,20 38.5,20 C48.1649831,20 56,27.8350169 56,37.5 C56,47.1649831 48.1649831,55 38.5,55 Z M383.5,55 C373.835017,55 366,47.1649831 366,37.5 C366,27.8350169 373.835017,20 383.5,20 C393.164983,20 401,27.8350169 401,37.5 C401,47.1649831 393.164983,55 383.5,55 Z M383.5,400 C373.835017,400 366,392.164983 366,382.5 C366,372.835017 373.835017,365 383.5,365 C393.164983,365 401,372.835017 401,382.5 C401,392.164983 393.164983,400 383.5,400 Z M38.5,400 C28.8350169,400 21,392.164983 21,382.5 C21,372.835017 28.8350169,365 38.5,365 C48.1649831,365 56,372.835017 56,382.5 C56,392.164983 48.1649831,400 38.5,400 Z"/>
+  </g>
+</svg>

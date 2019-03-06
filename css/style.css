@@ -1,0 +1,279 @@
+@font-face {
+    font-family: mario;
+    src: url(../assets/fonts/SuperMario256.ttf);
+}
+
+body {
+    background-image: url('../assets/img/background.jpg');
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+
+h1,
+h2,
+p {
+    color: #fff;
+    font-family: mario;
+    -webkit-text-stroke: 2px #000;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    float: left;
+    width: 33.333%;
+}
+
+.mute {
+    width: 10%;
+}
+
+.container {
+    /*height: calc(100vh - 45px);*/
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        height: auto;
+        max-width: 1140px;
+    }
+}
+
+
+/* ------------------------- Game -------------------------*/
+
+.game {
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    width: 60%;
+}
+
+.mario-container {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.mario {
+    display: block;
+    margin: 15vh auto 0;
+    width: 200px;
+    /*transform: translateY(-25vh);*/
+}
+
+.message {
+    height: 5vh;
+}
+
+.message.hidden {
+    opacity: 0;
+    -webkit-animation: fade 1s ease-out;
+}
+
+.jump {
+    -webkit-animation: jump 0.5s ease-out;
+}
+
+
+/*
+ * score
+ */
+
+.score {}
+
+.score__counter {}
+
+.score__coin {
+    vertical-align: middle;
+    width: 20px;
+}
+
+.score__added {
+    padding-left: 50px;
+}
+
+.score__added.hidden {
+    opacity: 0;
+    -webkit-animation: fadeInOut 0.5s ease-out;
+}
+
+/*
+ * special coins
+ */
+
+.special-coins {
+    float: right;
+}
+
+.special-coins img {
+    width: 30%;
+}
+
+
+/*
+ * bricks
+ */
+
+.bricks-container {
+    text-align:center;
+    /*display: flex;*/
+    margin: 15vh auto 0;
+    width: 100%;
+}
+
+.bricks-container .brick__container {
+    position: relative;
+}
+
+.bricks-container .brick__container {
+    display: inline-block;
+    margin-left: -4px;
+    height: 80px;
+    width: 80px;
+}
+
+.bricks-container .brick__container .brick {
+    top: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.bricks-container .brick__container .brick--item.jump {
+    -webkit-animation: fadeOutUp 0.5s ease-out;
+}
+
+.bricks-container .brick__container img {
+    width: 80px;
+}
+
+.bricks-container .brick__container.fade-in .brick--item {
+    -webkit-animation: fadeOutUp 0.5s ease-out;
+}
+
+.bricks-container .brick__container .brick--item {
+    height: 100%;
+}
+/* ------------------------- Shop -------------------------*/
+
+.shop {
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .3);
+    height: 100vh;
+    width: 40%;
+}
+
+.shop .shop__item {
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    width: 150px;
+}
+
+.shop .shop__item img {
+    width: 100%;
+}
+
+.shop .shop__item .shop__price .coin {
+    padding-right: 15px;
+    vertical-align: middle;
+    width: 20px;
+}
+
+
+/* ------------------------- animation -------------------------*/
+
+@-webkit-keyframes jump {
+    0% {
+        transform: translateY(0)
+    }
+    50% {
+        transform: translateY(-24vh)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes fadeOutUp {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-70px);
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-100px);
+    }
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

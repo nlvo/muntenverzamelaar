@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <audio controls autoplay hidden="true" volume="5">
+            <source src="assets/audio/title-theme-new-super-mario-bros.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+                <!-- Title Theme - New Super Mario Bros. | https://www.youtube.com/watch?v=EqLUgl5nxhI -->
+                <!-- All Items Obtained - New Super Mario Bros. | https://www.youtube.com/watch?v=SW1PCoMuBxA -->
+                <!-- Super Mario Bros.-Coin Sound Effect | https://www.youtube.com/watch?v=RfkcI8dhfsQ -->
+        </audio>
+        <div class="game">
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <h1>Mario <img class="mute" src="assets/img/sound.svg" alt=""></h1>
+                        </li>
+                        <li class="score">
+                            <p class="score__counter">
+                                <img class="score__coin" src="assets/img/coin.svg"> x <span class="points">00</span></p>
+                            <p class="score__added hidden"></p>
+                        </li>
+                        <li class="special-coins">
+                            <img class="special-coin-placeholder" src="assets/img/coin-holder.svg" alt="">
+                            <img class="special-coin-placeholder" src="assets/img/coin-holder.svg" alt="">
+                            <img class="special-coin-placeholder" src="assets/img/coin-holder.svg" alt="">
+                            <p class="timer"></p>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="bricks-container">
+                <div class="brick__container brick__normal">
+                    <img class="brick" src="assets/img/brick.svg">
+                    <img class="brick--item coin" src="assets/img/coin.svg">
+                </div>
+                <div class="brick__container brick__mystery">
+                    <img class="brick brick--question" src="assets/img/question-mark.svg">
+                    <img class="brick--item powerup" src="assets/img/star.svg">
+                </div>
+            </div>
+            <div class="mario-container">
+                <p class="message hidden"></p>
+                <img class="mario" src="assets/img/mario.svg">
+            </div>
+        </div>
+        <div class="shop">
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

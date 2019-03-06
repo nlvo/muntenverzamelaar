@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="421" height="421" viewBox="0 0 421 421">
+  <defs>
+    <linearGradient id="brick-b" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#C06634"/>
+      <stop offset="100%" stop-opacity=".15"/>
+    </linearGradient>
+    <polygon id="brick-a" points="0 10 11 0 410.5 0 421 10 421 412.5 410.5 421 11 421 0 412.5"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <use fill="#934C25" xlink:href="#brick-a"/>
+    <use fill="url(#brick-b)" xlink:href="#brick-a"/>
+    <polygon fill="#934C25" points="10 9 412 10 412 411 10 411"/>
+    <rect width="421" height="11" y="136.667" fill="#4F2915"/>
+    <rect width="421" height="11" y="273.333" fill="#4F2915"/>
+    <rect width="141" height="11" x="27" y="205" fill="#4F2915" transform="rotate(90 97.5 210.5)"/>
+    <rect width="141" height="11" x="255" y="205" fill="#4F2915" transform="rotate(90 325.5 210.5)"/>
+    <rect width="130" height="11" x="144" y="69" fill="#4F2915" transform="rotate(90 209 74.5)"/>
+    <rect width="131" height="11" x="145" y="340" fill="#4F2915" transform="rotate(90 210.5 345.5)"/>
+  </g>
+</svg>

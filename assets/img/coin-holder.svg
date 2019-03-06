@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="421" height="421" viewBox="0 0 421 421">
+  <defs>
+    <path id="coin-holder-a" d="M210.5,421 C326.75594,421 421,326.75594 421,210.5 C421,94.2440602 326.75594,0 210.5,0 C94.2440602,0 0,94.2440602 0,210.5 C0,326.75594 94.2440602,421 210.5,421 Z"/>
+    <mask id="coin-holder-b" width="421" height="421" x="0" y="0" fill="#fff">
+      <use xlink:href="#coin-holder-a"/>
+    </mask>
+  </defs>
+  <use fill="none" fill-rule="evenodd" stroke="#FFF" stroke-dasharray="84.2 84.2" stroke-opacity=".5" stroke-width="33.68" mask="url(#coin-holder-b)" xlink:href="#coin-holder-a"/>
+</svg>
